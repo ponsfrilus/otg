@@ -11,17 +11,17 @@ Lors de l'accueil d'une nouvelle personnes à l'EPFL, un collaborateur ayant les
 ## Première version
 La première version du site doit permettre les fonctionnalités suivantes:
   1. Création du secret
-    * Champ pour saisir le secret
-    * Champ pour saisir le destinataire du secret
-    * Champ pour saisir un message au destinataire du secret
+     * Champ pour saisir le secret
+     * Champ pour saisir le destinataire du secret
+     * Champ pour saisir un message au destinataire du secret
   1. Création de la page d'affichage du secret, avec
-    * Un avertissement sur la révocation du secret
+      * Un avertissement sur la révocation du secret
     * Le message que le créateur du secret à destiné au récepteur
-    * Le secret lui-même
+     * Le secret lui-même
   1. L'envoi du secret par email, avec
-    * L'avertissement sur la révocation du secret
-    * Le lien vers le secret
-    * Le message du créateur du secret
+     * L'avertissement sur la révocation du secret
+     * Le lien vers le secret
+     * Le message du créateur du secret
 
 Note que le système doit être capable de stocker les secrets de manière 100% sécure et que seule la clé contenue dans le lien doit être capable de le décrypter.
 
@@ -33,8 +33,8 @@ La troisième version du système de doit pas limiter les secrets à un champ te
 
 ## Autres améliorations possibles (en vrac)
   * Proposer un générateur de mot de passe sécure, humainement lisible (aka prononçable), etc...
-  * [HOPT](https://tools.ietf.org/html/rfc4226) - Permettre le choix du nombre d'utilisation du lien (nombre d'affichage du secret) (HOTP: An HMAC-Based One-Time Password Algorithm)
-  * [TOPT](https://tools.ietf.org/html/rfc6238) - Permettre de mettre une date d'expiration au secret (TOTP: Time-Based One-Time Password Algorithm)
+  * [HOTP](https://tools.ietf.org/html/rfc4226) - Permettre le choix du nombre d'utilisation du lien (nombre d'affichage du secret) (HOTP: An HMAC-Based One-Time Password Algorithm)
+  * [TOTP](https://tools.ietf.org/html/rfc6238) - Permettre de mettre une date d'expiration au secret (TOTP: Time-Based One-Time Password Algorithm)
   * Permettre de choisir le mode du secret (entre nombre d'affichage ou date d'expiration ou les deux)
   * S'assurer de la destruction du secret (lifetime) s'il n'a pas été vu/lu d'ici à dans x jours
   * Notifier le créateur du secret de l'utilisation de son lien
